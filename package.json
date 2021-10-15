@@ -1,7 +1,9 @@
 {
   "name": "wind-themes",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main": "./plugin.js",
   "scripts": {
+    "prepublish": "node prepublish.js",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
@@ -20,7 +22,12 @@
     "vite": "^2.6.4"
   },
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": ">=16.4.0",
+    "tailwindcss": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
   }
 }
