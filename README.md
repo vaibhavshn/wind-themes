@@ -1,6 +1,6 @@
 # 🎨 wind-themes
 
-A lightweight (~5kB) [tailwindcss](https://tailwindcss.com) plugin that handles multiple themes. 🎨
+A lightweight (~3.2kB) [tailwindcss](https://tailwindcss.com) plugin that handles multiple themes. 🎨
 
 <p>
 
@@ -58,6 +58,57 @@ module.exports = {
       },
     }),
   ],
+};
+```
+
+Now, you can use these _dynamic_ colors as follows:
+
+```html
+<div class="text-primary">wind-themes</div>
+<input class="bg-secondary-100" />
+```
+
+Also, if you set `importColors` to true, you can use every color defined in the config by using it's theme name, color and shade as follows:
+
+```html
+<div class="text-dark-red-primary">wind-themes</div>
+<input class="bg-light-purple-secondary-100" />
+```
+
+### Usage in React
+
+Right now, this only supports class based theme support, so you need to add a class to the root of the html tree or wherever you want a specific theme hardcoded.
+
+For React, there is a `<ThemeProvider />` included with this package.
+
+You can use it as shown:
+
+```js
+import { ThemeProvider } from 'wind-themes/react';
+
+ReactDOM.render(
+  <ThemeProvider defaultTheme="dark-red" themes={['dark-red', 'light-purple']}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+);
+```
+
+Also, there is a custom `useTheme()` hook also included which lets you read and update the `theme` state.
+
+```jsx
+import { useTheme } from 'wind-themes/react';
+
+const ThemeSwitcher = () => {
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <div>
+      <div>Current theme: {theme}</div>
+      <button onClick={() => setTheme('dark-red')}>Set dark-red</button>
+      <button onClick={() => setTheme('light-purple')}>Set light-purple</button>
+    </div>
+  );
 };
 ```
 
