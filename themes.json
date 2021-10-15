@@ -1,0 +1,67 @@
+{
+  "extend": true,
+  "importColors": true,
+  "defaultTheme": "soft-gold",
+  "themes": {
+    "dark-red": {
+      "primary": {
+        "DEFAULT": "#C75A5A",
+        "100": "#FFC0C0"
+      },
+      "secondary": {
+        "DEFAULT": "#181818",
+        "100": "#494949"
+      },
+      "text": {
+        "DEFAULT": "#D6D6D6",
+        "100": "#fff"
+      },
+      "border": "#555"
+    },
+    "light-purple": {
+      "primary": {
+        "DEFAULT": "#7D50DC",
+        "100": "#4E7FFF"
+      },
+      "secondary": {
+        "DEFAULT": "#FFFFFF",
+        "100": "#EBEBEB"
+      },
+      "text": {
+        "DEFAULT": "#292929",
+        "100": "#fff"
+      },
+      "border": "#555"
+    },
+    "soft-gold": {
+      "primary": {
+        "DEFAULT": "#FEE0CB",
+        "100": "#E27221"
+      },
+      "secondary": {
+        "DEFAULT": "#FFFFFF",
+        "100": "#EBEBEB"
+      },
+      "text": {
+        "DEFAULT": "#292929",
+        "100": "#E27221"
+      },
+      "border": "#E27221"
+    },
+    "full-purple": {
+      "primary": {
+        "DEFAULT": "#FFFFFF",
+        "100": "#F4F4F4"
+      },
+      "secondary": {
+        "DEFAULT": "#504F9C",
+        "100": "#E6E6E6"
+      },
+      "text": {
+        "DEFAULT": "#FFFFFF",
+        "100": "#0C0B0B"
+      },
+      "border": "#F5F5F5"
+    }
+  }
+}
