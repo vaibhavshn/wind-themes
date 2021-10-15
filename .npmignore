@@ -1,9 +1,11 @@
-/example
 /dist
+/example
+/node_modules
 
 index.html
 pnpm-lock.yaml
 postcss.config.js
+prepublish.js
 tailwind.config.js
 themes.json
 vite.config.js
