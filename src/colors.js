@@ -1,3 +1,4 @@
+const { rgb } = require('chalk');
 const { varify } = require('./utils');
 
 const getColors = (themes, importColors) => {
@@ -20,10 +21,22 @@ const getColors = (themes, importColors) => {
       const shades = data[color];
 
       if (typeof shades === 'string') {
-        vars[color]['DEFAULT'] = varify(true, color);
+        const varName = varify(true, color);
+        vars[color]['DEFAULT'] = ({ opacityValue }) => {
+          if (opacityValue !== undefined) {
+            return `rgba(${varName}, ${opacityValue})`;
+          }
+          return `rgb(${varName})`;
+        };
       } else {
         Object.keys(shades).forEach((shade) => {
-          vars[color][shade] = varify(true, color, shade);
+          const varName = varify(true, color, shade);
+          vars[color][shade] = ({ opacityValue }) => {
+            if (opacityValue !== undefined) {
+              return `rgba(${varName}, ${opacityValue})`;
+            }
+            return `rgb(${varName})`;
+          };
         });
       }
     });

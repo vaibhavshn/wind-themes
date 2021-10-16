@@ -1,14 +1,9 @@
-const { blue, underline, yellow } = require('chalk');
+const { blue, underline, yellow, red } = require('chalk');
 
 const log = function () {
   console.log(blue('[wind-themes]'), ...arguments);
 };
 
-/**
- * Prints the themes config
- * @param {string} defaultTheme
- * @param {Record<string, any>} themes
- */
 const init = (defaultTheme, themes, extend, importColors) => {
   if (typeof themes !== 'object') return;
   const names = Object.keys(themes).map((theme) => {
@@ -20,5 +15,9 @@ const init = (defaultTheme, themes, extend, importColors) => {
 };
 
 module.exports = {
+  log,
   init,
+  error() {
+    log(red('error'), '-', ...arguments);
+  },
 };

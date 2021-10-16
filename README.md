@@ -1,6 +1,6 @@
 # 🎨 wind-themes
 
-A lightweight (~3.2kB) [tailwindcss](https://tailwindcss.com) plugin that handles multiple themes. 🎨
+A lightweight [tailwindcss](https://tailwindcss.com) plugin that handles multiple themes. 🎨
 
 <p>
 
