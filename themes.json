@@ -58,8 +58,9 @@
         "100": "#E6E6E6"
       },
       "text": {
-        "DEFAULT": "#FFFFFF",
-        "100": "#0C0B0B"
+        "DEFAULT": "#FFF",
+        "100": "#0C0B0B",
+        "inverted": "#191919"
       },
       "border": "#F5F5F5"
     }

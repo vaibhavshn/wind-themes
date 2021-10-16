@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    @apply transition-colors duration-500;
+    @apply transition-colors duration-300;
   }
   body {
     @apply antialiased bg-white;
