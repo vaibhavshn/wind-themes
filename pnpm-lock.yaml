@@ -5,7 +5,7 @@ specifiers:
   autoprefixer: ^10.3.7
   chalk: ^4.1.2
   clsx: ^1.1.1
-  hex-rgb-js: ^5.0.0
+  hex-rgb-js: ^5.0.1
   jest: ^27.2.5
   postcss: ^8.3.9
   react: ^17.0.0
@@ -15,7 +15,7 @@ specifiers:
 
 dependencies:
   chalk: 4.1.2
-  hex-rgb-js: 5.0.0
+  hex-rgb-js: 5.0.1
 
 devDependencies:
   '@vitejs/plugin-react': 1.0.4
@@ -1666,8 +1666,8 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hex-rgb-js/5.0.0:
-    resolution: {integrity: sha512-Ry/D3tIiFV0z/2WPAUUz0VwlhphFa+4qSwIjmEAJguuzoiCvdWpMmO79tjwsROZ+hwxikmwXBo+M64ssdiB5mw==}
+  /hex-rgb-js/5.0.1:
+    resolution: {integrity: sha512-+ZS8I7iOOGkk+B4k8uImyacLsUOCBoN1xYE6skyY1I0s/cDzJoYfsPTLfITWK2oLszi5qbunBHDB6Dy3w8gv+w==}
     engines: {node: '>=12'}
     dev: false
 

@@ -8,7 +8,6 @@ const windThemesPlugin = plugin.withOptions(
     return ({ addBase, e }) => {
       init(defaultTheme, themes, extend, importColors);
       addBases(addBase, defaultTheme, themes, e);
-      // addBase(getBase(defaultTheme, themes, e));
     };
   },
   ({ themes, extend = false, importColors = false }) => {
