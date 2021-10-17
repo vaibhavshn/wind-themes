@@ -6,11 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        asphalt: '#181818'
-      }
-    }
+        asphalt: '#181818',
+      },
+    },
   },
-  plugins: [
-    windThemes(themes)
-  ],
+  plugins: [windThemes(themes), require('@tailwindcss/typography')],
 };

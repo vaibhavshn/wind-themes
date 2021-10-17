@@ -1,15 +1,16 @@
-import clsx from "clsx";
+import clsx from 'clsx';
 
 const LogIn = ({ className }) => {
   return (
     <div
+      id="logIn"
       className={clsx(
-        'w-full max-w-sm mx-auto p-4 text-text bg-secondary rounded-lg border border-border',
+        'w-full max-w-md mx-auto p-4 text-text bg-secondary rounded-lg border border-border',
         className
       )}
     >
       <h3 className="mt-1 text-2xl font-bold">Log In</h3>
-      <div className="mt-4 space-y-3">
+      <div className="mt-6 space-y-3">
         <div className="flex flex-col space-y-1">
           <label className="text-sm">Email</label>
           <input
@@ -28,7 +29,7 @@ const LogIn = ({ className }) => {
           />
         </div>
       </div>
-      <button className="w-full h-10 mt-4 font-bold bg-primary text-text-100 rounded-md">
+      <button className="w-full h-10 mt-6 font-bold bg-primary text-text-100 rounded-md">
         Log In
       </button>
       <div className="mt-2 text-center">

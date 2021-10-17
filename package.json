@@ -22,6 +22,7 @@
     "hex-rgb-js": "^5.0.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0-alpha.2",
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.3.7",
     "clsx": "^1.1.1",

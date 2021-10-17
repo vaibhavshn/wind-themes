@@ -16,3 +16,17 @@
     @apply w-5 h-5 border;
   }
 }
+
+@layer components {
+  .prose code {
+    @apply !text-dark-red-primary before:!content-none after:!content-none;
+  }
+
+  .prose a {
+    @apply !text-light-purple-primary;
+  }
+
+  .container {
+    @apply w-full max-w-screen-lg mx-auto p-4;
+  }
+}
