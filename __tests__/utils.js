@@ -1,4 +1,4 @@
-const { varify, getCSSVars, processColor } = require('./utils');
+const { varify, getCSSVars, processColor } = require('../src/utils');
 
 test(`varify() tests`, () => {
   // create vars
