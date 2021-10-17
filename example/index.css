@@ -3,11 +3,8 @@
 @tailwind components;
 
 @layer base {
-  * {
-    @apply transition-colors duration-300;
-  }
   body {
-    @apply antialiased bg-white;
+    @apply antialiased bg-white transition-colors duration-500;
   }
 }
 

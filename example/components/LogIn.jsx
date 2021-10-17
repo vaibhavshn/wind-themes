@@ -5,7 +5,7 @@ const LogIn = ({ className }) => {
     <div
       id="logIn"
       className={clsx(
-        'w-full max-w-md mx-auto p-4 text-text bg-secondary rounded-lg border border-border',
+        'w-full max-w-md mx-auto p-4 text-text bg-secondary rounded-lg border border-border transition-colors',
         className
       )}
     >

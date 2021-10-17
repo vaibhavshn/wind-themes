@@ -12,7 +12,7 @@ function App() {
           <a
             href="https://github.com/vaibhavshn/wind-themes"
             target="_blank"
-            className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full hover:bg-secondary/75"
+            className="flex items-center justify-center w-10 h-10 bg-secondary rounded-full hover:bg-secondary/75 transition-colors"
             title="wind-themes repository"
             aria-label="wind-themes repository"
           >
@@ -41,9 +41,7 @@ function App() {
         <hr className="!my-3" />
         <p>
           You can try switching back and forth the themes in the{' '}
-          <a href="#play">
-            Playground
-          </a>
+          <a href="#play">Playground</a>
           .
           <br />
           This page also remembers the theme you set the last time you visited
