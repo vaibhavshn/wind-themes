@@ -1,7 +1,8 @@
 const { blue, underline, yellow, red } = require('chalk');
 
 const log = function () {
-  console.log(blue('[wind-themes]'), ...arguments);
+  if (process.env.NODE_ENV !== 'test')
+    console.log(blue('[wind-themes]'), ...arguments);
 };
 
 const init = (defaultTheme, themes, extend, importColors) => {
@@ -19,5 +20,6 @@ module.exports = {
   init,
   error() {
     log(red('error'), '-', ...arguments);
+    throw new Error();
   },
 };

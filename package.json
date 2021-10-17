@@ -6,7 +6,8 @@
     "prepublishOnly": "node prepublish.js",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest"
   },
   "dependencies": {
     "chalk": "^4.1.2",
@@ -16,6 +17,7 @@
     "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.3.7",
     "clsx": "^1.1.1",
+    "jest": "^27.2.5",
     "postcss": "^8.3.9",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",

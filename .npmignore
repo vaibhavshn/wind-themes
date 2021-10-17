@@ -3,9 +3,12 @@
 /node_modules
 
 index.html
+netlify.toml
 pnpm-lock.yaml
 postcss.config.js
 prepublish.js
 tailwind.config.js
 themes.json
 vite.config.js
+
+*.test.js
