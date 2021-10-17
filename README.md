@@ -21,7 +21,9 @@ Check out the [example](./example) in this repo, or read on.
 Install `wind-themes`
 
 ```sh
-npm install wind-themes
+npm i -D wind-themes
+# or
+yarn add -D wind-themes
 ```
 
 Check out the sample [themes config specified in a json file](./themes.json) for a single source of truth, you can use this file for now and update later.

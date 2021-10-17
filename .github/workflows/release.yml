@@ -1,4 +1,4 @@
-name: Release to GHR
+name: Release
 on:
   push:
     branches:
