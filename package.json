@@ -56,5 +56,10 @@
     "css",
     "react",
     "css"
-  ]
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
 }
