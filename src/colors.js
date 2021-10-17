@@ -1,7 +1,6 @@
-const { rgb } = require('chalk');
 const { varify } = require('./utils');
 
-const getColors = (themes, importColors) => {
+const getColors = (themes, importColors = false) => {
   const vars = {};
   const colors = {};
 
