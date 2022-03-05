@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import clsx from 'clsx'
 
 const LogIn = ({ className }) => {
   return (
@@ -38,7 +38,7 @@ const LogIn = ({ className }) => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LogIn;
+export default LogIn

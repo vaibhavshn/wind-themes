@@ -1,47 +1,47 @@
-const { varify } = require('./utils');
+const { varify } = require('./utils')
 
 const getColors = (themes, importColors = false) => {
-  const vars = {};
-  const colors = {};
+  const vars = {}
+  const colors = {}
 
   Object.keys(themes).forEach((theme) => {
-    const data = themes[theme];
+    const data = themes[theme]
 
     if (importColors) {
       // import colors such as: text-default-primary-100
-      colors[theme] = data;
+      colors[theme] = data
     }
 
     Object.keys(data).forEach((color) => {
       if (!vars[color]) {
-        vars[color] = {};
+        vars[color] = {}
       }
 
-      const shades = data[color];
+      const shades = data[color]
 
       if (typeof shades === 'string') {
-        const varName = varify(true, color);
+        const varName = varify(true, color)
         vars[color]['DEFAULT'] = ({ opacityValue }) => {
           if (opacityValue !== undefined) {
-            return `rgba(${varName}, ${opacityValue})`;
+            return `rgba(${varName}, ${opacityValue})`
           }
-          return `rgb(${varName})`;
-        };
+          return `rgb(${varName})`
+        }
       } else {
         Object.keys(shades).forEach((shade) => {
-          const varName = varify(true, color, shade);
+          const varName = varify(true, color, shade)
           vars[color][shade] = ({ opacityValue }) => {
             if (opacityValue !== undefined) {
-              return `rgba(${varName}, ${opacityValue})`;
+              return `rgba(${varName}, ${opacityValue})`
             }
-            return `rgb(${varName})`;
-          };
-        });
+            return `rgb(${varName})`
+          }
+        })
       }
-    });
-  });
+    })
+  })
 
-  return { ...colors, ...vars };
-};
+  return { ...colors, ...vars }
+}
 
-module.exports = { getColors };
+module.exports = { getColors }

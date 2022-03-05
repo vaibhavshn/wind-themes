@@ -1,8 +1,8 @@
-import clsx from 'clsx';
-import { useTheme } from '../../react';
+import clsx from 'clsx'
+import { useTheme } from 'wind-themes/react'
 
 const ThemeCard = ({ theme, colors }) => {
-  const { theme: globalTheme, setTheme } = useTheme();
+  const { theme: globalTheme, setTheme } = useTheme()
 
   return (
     <div
@@ -38,7 +38,7 @@ const ThemeCard = ({ theme, colors }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ThemeCard;
+export default ThemeCard

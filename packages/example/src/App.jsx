@@ -1,7 +1,5 @@
-import { useTheme } from '../react';
-
-import LogIn from './components/LogIn';
-import ThemeCard from './components/ThemeCard';
+import LogIn from './components/LogIn'
+import ThemeCard from './components/ThemeCard'
 
 function App() {
   return (
@@ -123,7 +121,7 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
